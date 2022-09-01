@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message HeartbeatMessage {
+    string messageID = 1;
+}
+message ElectionMessage{}
+message VictoryMessage{}
