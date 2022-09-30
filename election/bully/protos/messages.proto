@@ -1,7 +1,22 @@
 syntax = "proto3";
+message OnlineMessage{
 
-message HeartbeatMessage {
-    string messageID = 1;
 }
-message ElectionMessage{}
-message VictoryMessage{}
+message HeartbeatMessage {
+    string instance_name = 1;
+    string tier_name = 2;
+    OnlineMessage online_message = 3;
+}
+message HeartbeatRequestMessage{
+    string instance_name = 1;
+    string tier_name = 2;
+}
+message ElectionMessage{
+    string instance_name = 1;
+    string tier_name = 2;
+}
+
+message AnswerMessage{
+    string instance_name = 1;
+    string tier_name = 2;
+}
